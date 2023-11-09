@@ -1,17 +1,63 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>About</title>
-    <link rel="stylesheet" href="style.css"/>
+    <link rel="stylesheet" href="style.css" />
+    <script src="https://kit.fontawesome.com/ea6d4fec5e.js" crossorigin="anonymous"></script>
+
 </head>
+
 <body>
     <nav>
         <a href="index.html">Home</a>
         <a href="about.html">About</a>
         <a href="contact.html">Contact</a>
     </nav>
-    <h1>This is a about page</h1>
+    <div class="about-section1">
+        <span class="about-author">-Brian Brett-</span>
+        <span class="quote">"Farming is a profession of <br />hope."</span>
+    </div>
+
+    <div class="about-section2">
+        <div class="about-section2-div1">
+            <h2>Let's Dig In Together</h2>
+            <p align="justify">
+                I would like to introduce myself as Ruthvik, a student at the Indus International School in Hyderabad. I
+                recently had the opportunity to thoroughly research the subject of organic farming and conducted
+                numerous interviews to gather information. The contents provided on this website are the result of
+                extensive research and meticulous efforts to ensure accuracy and reliability. It is my earnest intention
+                to present a formal and well-researched account of organic farming practices, as reflected in the
+                information compiled herein.
+            </p>
+        </div>
+        <img class="about-image_2" src="image_2.png" alt="farmer" />
+    </div>
+
+    <div id="chatbot-toggle-icon" class="chatbot-toggle-icon">
+        <i class="fas fa-comment-dots"></i>
+    </div>
+
+    <!-- Chatbot Container -->
+    <div class="chatbot-container" id="chatbot-container">
+        <div class="chatbox">
+            <div class="chat-messages" id="chat-messages">
+                <!-- Chat messages will appear here -->
+            </div>
+            <div class="user-input">
+                <input type="text" id="name" placeholder="Your Name">
+                <input type="email" id="email" placeholder="Your Email">
+                <textarea id="message" placeholder="Type your message here"></textarea>
+                <button id="send-button">Send</button>
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+
+
 </body>
+
 </html>

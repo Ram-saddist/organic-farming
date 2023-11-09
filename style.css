@@ -1,70 +1,326 @@
-*{
+* {
     font-family: Georgia, 'Times New Roman', Times, serif;
 }
-body{
+
+body {
     margin: 0%;
+    padding:0%
 }
-nav{
+nav {
     display: flex;
     justify-content: center;
-    padding:1% 0%;
+    padding: 1% 0%;
 }
-nav a{
+nav a {
     text-decoration: none;
     font-size: 1rem;
     margin-left: 3%;
     color: black;
 }
-nav a:hover{
+nav a:hover {
     text-decoration: underline;
 }
-
-.section1{
-    display: flex;
-    justify-content: space-between;
-    padding:7%
+.section1 {
+    
+    padding: 7%;
+    position:relative;
+    z-index: 1;
 }
-.welcome{
+.welcome {
     font-size: 4rem;
-    text-align: right;
+    color: white;   
 }
-.learn-btn{
+
+.learn-btn {
     background-color: green;
     text-decoration: none;
-    padding:3%;
-    float: right;
-    border-radius:5px;
-    color:white
+    padding: 1%;
+    border-radius: 5px;
+    color: white;
+    width:16%
 }
-.section2{
+
+.chat{
+    width:100%
+}
+.section2 {
     background-color: rgb(98, 210, 98);
-    color:white;
+    color: white;
     display: flex;
     justify-content: center;
     flex-direction: column;
     align-items: center;
-    height:250px
+    height: 280px;
+    margin:39% 5% 0% 5%
 }
 
-.quote{
+#carouselExampleAutoplaying{
+    position: absolute;
+    top:70px;
+    
+}
+
+.quote {
     font-size: 3rem;
     text-align: center;
 }
 
-.section3{
-    margin-top: 2%;
+.section3 {
+    margin:2% 5% 0% 5%;
     display: flex;
     justify-content: center;
     align-items: center;
     flex-direction: column;
 }
-.image_1{
-    width:80vw
+
+
+.image_1 {
+    width: 80vw
 }
-.section3-welcome{
+
+.section3-welcome {
     font-size: 2rem;
 }
-.intro{
+
+.intro {
     text-align: justify;
-    width:80vw
+    width: 80vw
+}
+
+
+.section4,.section5,h1,.section6,.section7,.section8{
+    margin:2% 5% 0% 5%
+}
+
+
+#toggler {
+    display: none;
+}
+
+#toggler+label {
+    cursor: pointer;
+}
+
+#toggler+label:before {
+    font-family: 'Glyphicons Halflings';
+    content: "\e114";
+    display: inline-block;
+    transform: rotate(-90deg);
+    transition: transform .3s;
+    padding: 1em;
+}
+
+#toggler~div {
+    display: none;
+    padding-left: 1em;
+}
+
+#toggler:checked~div {
+    display: block;
+}
+
+#toggler:checked+label:before {
+    transform: rotate(0);
+}
+
+
+/*second toggler*/
+#toggler2 {
+    display: none;
+}
+
+#toggler2+label {
+    cursor: pointer;
+}
+
+#toggler2+label:before {
+    font-family: 'Glyphicons Halflings';
+    content: "\e114";
+    display: inline-block;
+    transform: rotate(-90deg);
+    transition: transform .3s;
+    padding: 1em;
+}
+
+#toggler2~div {
+    display: none;
+    padding-left: 1em;
+}
+
+#toggler2:checked~div {
+    display: block;
+}
+
+#toggler2:checked+label:before {
+    transform: rotate(0);
+}
+
+/*three toggler*/
+#toggler3 {
+    display: none;
+}
+
+#toggler3+label {
+    cursor: pointer;
+}
+
+#toggler3+label:before {
+    font-family: 'Glyphicons Halflings';
+    content: "\e114";
+    display: inline-block;
+    transform: rotate(-90deg);
+    transition: transform .3s;
+    padding: 1em;
+}
+
+#toggler3~div {
+    display: none;
+    padding-left: 1em;
+}
+
+#toggler3:checked~div {
+    display: block;
+}
+
+#toggler3:checked+label:before {
+    transform: rotate(0);
+}
+
+
+/*four toggler*/
+#toggler4 {
+    display: none;
+}
+
+#toggler4+label {
+    cursor: pointer;
+}
+
+#toggler4+label:before {
+    font-family: 'Glyphicons Halflings';
+    content: "\e114";
+    display: inline-block;
+    transform: rotate(-90deg);
+    transition: transform .3s;
+    padding: 1em;
+}
+
+#toggler4~div {
+    display: none;
+    padding-left: 1em;
+}
+
+#toggler4:checked~div {
+    display: block;
+}
+
+#toggler4:checked+label:before {
+    transform: rotate(0);
+}
+
+
+
+
+/*about css*/
+.about-section1 {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    height: 250px
+}
+
+.about-section2 {
+    background-color: rgb(98, 210, 98);
+    display: flex;
+    color: white;
+    justify-content: space-between;
+    padding: 4% 3%
+}
+
+.about-section2-div1 {
+    width: 45vw
+}
+
+.about-image_2 {
+    width: 30vw
+}
+
+/*contact css */
+.contact-section1 {
+    text-align: center;
+}
+
+@media (max-width:500px) {
+    .section1 {
+        flex-direction: column;
+    }
+    .section1 img{
+        width:100%
+    }
+    .welcome {
+        font-size: 2rem;
+        text-align: center;
+    }
+    .quote {
+        font-size: 2rem;
+        text-align: center;
+    }
+        
+}
+
+
+.chatbot-toggle-icon{
+    position: fixed;
+    right:2%;
+    bottom: 5%;
+    width:50px;
+    height:40px;
+}
+
+.chatbot-container {
+    position: fixed;
+    bottom: 0;
+    right: 70px;
+    width: 300px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    background-color: #fff;
+}
+
+.chatbox {
+    padding: 10px;
+}
+
+.chat-messages {
+    max-height: 200px;
+    overflow-y: auto;
+}
+
+.user-input {
+    display: flex;
+    flex-direction: column;
+    padding: 10px;
+}
+
+input[type="text"],
+input[type="email"],
+textarea {
+    margin-bottom: 10px;
+    padding: 5px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+button {
+    padding: 5px 10px;
+    background-color: #007BFF;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #0056b3;
 }
