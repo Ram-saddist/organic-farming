@@ -88,7 +88,7 @@ nav a:hover {
 }
 
 
-.section4,.section5,h1,.section6,.section7,.section8{
+.section4,.section5,h1,.section6,.section7,.section8,.section9{
     margin:2% 5% 0% 5%
 }
 
@@ -218,6 +218,36 @@ nav a:hover {
     transform: rotate(0);
 }
 
+/*five toggler*/
+#toggler5 {
+    display: none;
+}
+
+#toggler5+label {
+    cursor: pointer;
+}
+
+#toggler5+label:before {
+    font-family: 'Glyphicons Halflings';
+    content: "\e114";
+    display: inline-block;
+    transform: rotate(-90deg);
+    transition: transform .3s;
+    padding: 1em;
+}
+
+#toggler5~div {
+    display: none;
+    padding-left: 1em;
+}
+
+#toggler5:checked~div {
+    display: block;
+}
+
+#toggler5:checked+label:before {
+    transform: rotate(0);
+}
 
 
 
